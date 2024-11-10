@@ -1,4 +1,6 @@
-package com.manga.store;
+package service;
+
+import model.Order;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -54,5 +56,9 @@ public class OrderService {
             }
         }
         return result; // Возвращает список найденных заказов
+    }
+
+    public Order getOrderById(int id) {
+        return null;
     }
 }

@@ -1,19 +1,16 @@
-package com.manga.store;
-import java.util.List;
+package model;
 
 public class Order {
-    private int id; // Уникальный идентификатор заказа
-    private int userId; // ID пользователя, сделавшего заказ
-    private String details; // Подробности заказа
+    private int id;
+    private int userId;
+    private String details;
 
-    // Конструктор
     public Order(int id, int userId, String details) {
         this.id = id;
         this.userId = userId;
         this.details = details;
     }
 
-    // Геттеры
     public int getId() {
         return id;
     }
@@ -26,7 +23,6 @@ public class Order {
         return details;
     }
 
-    // Переопределение метода toString для удобного отображения информации о заказе
     @Override
     public String toString() {
         return "Order{" +
